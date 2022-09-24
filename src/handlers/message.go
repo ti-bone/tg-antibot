@@ -19,21 +19,24 @@ func Message(b *gotgbot.Bot, ctx *ext.Context) error {
 		return nil
 	}
 
-	// Fetch info about sender
-	chatMember, err := b.GetChatMember(ctx.EffectiveChat.Id, ctx.EffectiveSender.Id(), &gotgbot.GetChatMemberOpts{})
+	// Check if sender - user, not a channel
+	if ctx.EffectiveSender.IsUser() {
+		// Fetch info about sender
+		chatMember, err := b.GetChatMember(ctx.EffectiveChat.Id, ctx.EffectiveSender.Id(), &gotgbot.GetChatMemberOpts{})
 
-	// Catch errors
-	if err != nil {
-		_, err2 := ctx.EffectiveMessage.Reply(b, "Error while fetching info about sender, please contact bot developer.", &gotgbot.SendMessageOpts{})
-		if err2 != nil {
-			return err2
+		// Catch errors
+		if err != nil {
+			_, err2 := ctx.EffectiveMessage.Reply(b, "Error while fetching info about sender, please contact bot developer.", &gotgbot.SendMessageOpts{})
+			if err2 != nil {
+				return err2
+			}
+			return err
 		}
-		return err
-	}
 
-	// Ignore admins and banned users
-	if chatMember.GetStatus() == "administrator" || chatMember.GetStatus() == "creator" || chatMember.GetStatus() == "kicked" {
-		return nil
+		// Ignore admins and banned users
+		if chatMember.GetStatus() == "administrator" || chatMember.GetStatus() == "creator" || chatMember.GetStatus() == "kicked" {
+			return nil
+		}
 	}
 
 	// Fetch current filters
