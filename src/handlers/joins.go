@@ -14,6 +14,11 @@ import (
 
 // Joins - Handler for new members
 func Joins(b *gotgbot.Bot, ctx *ext.Context) error {
+	// Ignore other chat types
+	if ctx.EffectiveChat.Type != "supergroup" {
+		return nil
+	}
+
 	// Fetch info about sender
 	chatMember, err := b.GetChatMember(ctx.EffectiveChat.Id, ctx.EffectiveSender.Id(), &gotgbot.GetChatMemberOpts{})
 
