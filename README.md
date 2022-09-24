@@ -1,16 +1,17 @@
 ## tg-antibot
-Bot for protect against bots-spammers.
+Bot to protect against spammer bots.
 
-If bot with name that matches filters joins to chat - it gets banned
+There are a large number of spam bots in Telegram at the moment, which pretend to be regular bots with interesting functionality, using your chat as a place for advertising, thereby spoiling the situation in the chat. This bot allows you to block these brazen advertisers, thereby preserving the chat from the essential and often deceptive advertising. Please keep in mind that the bot itself does not distribute advertising, but only fights it
 
-If bot send message, that match filters - it gets banned
+If a bot with a name matching the filters joins the chat, it will be banned.
+
+If the bot sends a message that matches the filters - it will be banned
 
 ## Hosted
 Hosted version: [@againstspam_bot](http://t.me/againstspam_bot)
+Note that the bot does not respond to commands, it just does not have them.
 
-Please notice that bot doesn't respond to commands, it just doesn't have them.
-
-You need to add bot to your chat and give to him "Delete Message" and "Restrict Members" rights.
+You need to add the bot to the chat and give it the rights "Delete message" and "Restrict users"
 
 ## Self-Hosted
 ### Prepare for build
