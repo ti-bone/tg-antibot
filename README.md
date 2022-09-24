@@ -3,15 +3,16 @@ Bot to protect against spammers.
 
 There are a large number of spam accounts in Telegram at the moment, which looks like a regular users, they join into your chat, solves captcha(if it present), and after some time start using your chat as a place for advertising, thereby spoiling the situation in the chat. This bot allows you to block these brazen advertisers, thereby preserving the chat from the essential and often deceptive advertising. Please keep in mind that the bot itself does not distribute advertising, but only fights it.
 
-If a bot with a name matching the filters joins the chat - it will be banned.
+If a user with a name matching the filters joins the chat - it will be banned.
 
-If the bot sends a message that matches the filters - it will be banned
+If the user sends a message that matches the filters - it will be banned.
 
 ## Hosted
 Hosted version: [@againstspam_bot](http://t.me/againstspam_bot)
+
 Note that the bot does not respond to commands, it just does not have them.
 
-You need to add the bot to the chat and give it the rights "Delete message" and "Restrict users"
+You need to add the bot to the chat and give it the rights "Delete message" and "Restrict users".
 
 ## Self-Hosted
 ### Prepare for build
