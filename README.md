@@ -17,7 +17,7 @@ You need to add a bot to the chat and give it "Delete messages" and "Restrict us
 ## Self-Hosted
 ### Prepare for build
 
-You will need [GoLand](https://www.jetbrains.com/go) version 1.18 pre-installed at least, as well as [Git](https://git-scm.com)
+You will need [GoLang](https://go.dev/) version 1.18 pre-installed at least, as well as [Git](https://git-scm.com)
 
 Clone source code:
 
