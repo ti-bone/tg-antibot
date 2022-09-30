@@ -27,7 +27,7 @@ func GetFilters() Filters {
 			"Даю ссылку",
 			"ДЕВУШКА СНГ ЕСТЬ",
 			"В ЭТОМ БОТE",
-			"НЕЙРОСЕТЬ КЛИКАЙ"
+			"НЕЙРОСЕТЬ КЛИКАЙ",
 		},
 		// Names of users, that forbidden
 		Names: []string{
