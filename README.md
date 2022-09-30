@@ -1,5 +1,5 @@
 ## tg-antibot
-Bot to protect against spammers.
+Bot to defend against spammers
 
 There are a large number of spam accounts in Telegram at the moment, which looks like a regular users, they join into your chat, solves captcha(if it present), and after some time start using your chat as a place for advertising, thereby spoiling the situation in the chat. This bot allows you to block these brazen advertisers, thereby preserving the chat from the essential and often deceptive advertising. Please keep in mind that the bot itself does not distribute advertising, but only fights it.
 
@@ -12,12 +12,12 @@ Hosted version: [@againstspam_bot](http://t.me/againstspam_bot)
 
 Note that the bot does not respond to commands, it just does not have them.
 
-You need to add the bot to the chat and give it the rights "Delete message" and "Restrict users".
+You need to add a bot to the chat and give it "Delete messages" and "Restrict users" permissions
 
 ## Self-Hosted
 ### Prepare for build
 
-You need to have installed GoLang 1.18 at least to build that, also you need to have git installed.
+You will need [GoLand](https://www.jetbrains.com/go) version 1.18 pre-installed at least, as well as [Git](https://git-scm.com)
 
 Clone source code:
 
